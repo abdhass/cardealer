@@ -1,0 +1,41 @@
+
+store has many cars. 
+customer needs to see how many cars are available. 
+
+1. Make a list of cars. So create cars. 
+
+input >>> Add a new car>>> (get pics of car from google, this using google Gem)
+input >>> how many cars are for sale >>> loop through car list
+input >>> create new customer
+
+store
+
+cars
+	make
+	cost
+	color
+
+customer
+	name
+	money
+
+customer.new(abdul, how_much_cash_they_have)
+input >>> customer wishes to buy car
+sale.new(customer, car)
+
+2. Sale object should have a method to check if the customer can afford it. if they cant, then throw a error. if they can...
+then sale."purchase" should delete the car from the lists of cars
+
+now u have a list of cars, customers, and sales. 
+
+possible improvements.... insert list of cars, customers and sales to a csv file as it grows. Delete and select from same list. in other words, the database is CSV files. or even better, use a online database GEM. this way everything is saved online and if program crashes, u got everything.
+
+
+Menu
+1. Add a car
+2. Add a customer
+3. Make a transaction
+4. Generate sales report
+5. view cars 
+
+use user inputs to generate the program. like user inputs to ask for main menu
