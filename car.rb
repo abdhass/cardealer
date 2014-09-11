@@ -26,6 +26,9 @@ class Car
 	def self.count
 		@@count
 	end
+	def self.instances
+		return @@instances
+	end
 
 end
 
