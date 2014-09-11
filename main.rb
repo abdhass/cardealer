@@ -1,12 +1,17 @@
+#coding: utf-8
 require_relative 'car'
 
 def mainmenu(londonBranch)
-	main_menu = "|||please type in a menu number|||
-	1 - Add a new car
-	2 - Add customer
-	3 - Cars for sale
-	4 - view car details
-	9 - **exit the program**"
+	main_menu = "        ▁ ▂ ▄ ▅ ▆ ▇ █ MÄÏŅ MËŅŮ █ ▇ ▆ ▅ ▄ ▂ ▁
+
+	ıllıllı 1. ÄĐĐ Ä ŅËŴ ĊÄŖ ıllıllı
+	ıllıllı 2. ÄĐĐ ŅËŴ ĊŮŚȚÖMËŖ ıllıllı
+	ıllıllı 3. ĊÄŖŚ ₣ÖŖ ŚÄĻË ıllıllı
+	ıllıllı 4. VÏËŴ ĊÄŖ ĐËȚÄÏĻŚ ıllıllı
+
+	ıllıllı 5. Buy ĊÄŖ  ıllıllı
+
+(¯`·.¸.·´¯`·.¸.-> 9. ËXÏȚ PŖÖĠŖÄM <-.¸.·´¯`·.¸.·´¯)"
 
 	puts main_menu
 	menu_choice = gets.chomp

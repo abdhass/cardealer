@@ -1,3 +1,4 @@
+#coding: utf-8
 class Car
   attr_accessor :reg, :make, :cost
   def initialize(reg, make, cost)
@@ -5,8 +6,9 @@ class Car
     @make = make
     @cost = cost
   end
+  
   def description
-    puts "This car is a #{@make} and costs #{@cost}"
+    puts "This car is a #{@make} and costs £#{@cost} and the reg is #{@reg}"
   end
 end
 
@@ -18,17 +20,24 @@ class CarDealer
   end
   
   def show_car
-    puts @@cars.any? ? @@cars.each {|car| car.description} : "Sorry no cars for sale"
+    def sorry
+      puts "Sorry no cars for sale"
+    end
+    @@cars.any? ? @@cars.each {|car| car.description} : sorry
   end
   
   def car_details(reg)
-    @@cars.each do |car| 
-      if car.reg == reg
-        puts "Car Reg: #{car.reg}
-              Car Make: #{car.make}
-              Car Cost: #{car.cost}" 
+    if @@cars.any?
+        @@cars.each do |car| 
+          if car.reg == reg
+            puts "Car Reg: #{car.reg} Car Make: #{car.make} Car Cost: #{car.cost}"   
+          else
+            puts "no car found"
+          end
+        end 
+      else
+        puts "No cars are stored. Please add a car"
       end
-    end
   end
 end
 #londonBranch = CarDealer.new
